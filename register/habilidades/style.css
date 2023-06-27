@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+
+:root{
+    --color-dark: rgb(14, 14, 14);
+    --color-dark2: rgb(32, 32, 32);
+    --color-dark3: rgb(22, 22, 22);
+    --color-white: #fff;
+    --color-green: rgb(103, 195, 80);
+    --color-green2: rgb(51, 149, 26);
+    --color-red: rgb(184, 40, 35);
+    --color-red2: rgb(146, 22, 17);
+}
+
+body {
+  font-family: 'Roboto', serif;
+  color: #fefffe;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  min-height: 100vh;
+  width: 100%;
+  background: url('../../assets/img/bgcad1.jpg')no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    height: 90px;
+    margin: 5px;
+}
+
+
+.box {
+    position: relative;
+    width: 750px;
+    height: 750px;
+    margin-top: 50px;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.489);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
+
+.box h1{
+    text-align: center;
+    font-weight: 300 bold;
+
+}
+
+.btn {
+    background-color: #081f2d;
+    border-radius: 29px;
+    border: 1px solid #081F2D;
+    color: white;
+    font-size: 15px;
+    padding: 15px 75px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    position: relative;
+    left: 280px;
+    top: 670px;
+    display: block;
+    position: absolute
+  }
+  
+  
+  .btn:hover {
+    background-color: white;
+    color: #081F2D;
+    border-color: #081F2D;
+    transition: 0.3s;
+  }
+  
+  
+
+
+#input-new-task,
+#btn-new-task{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+#input-new-task{
+    width: 20rem;
+    border-radius: 1rem;
+    position: relative;
+    left: 180px;
+    background-color: #081f2d;;
+}
+
+#btn-new-task{
+    background-color: #081f2d;;
+    color: white;    
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+    position: relative;
+    left: 227px;
+}
+
+#btn-new-task:hover{
+    background-color: green;
+} 
+
+
+#to-do-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+
+#to-do-list li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+
+}
+
+#to-do-list li:hover{
+    background-color: #081f2d;
+    transition: .4s;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+#btn-ok{
+    border: none;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-ok:hover{
+    background-color: var(--color-red2);
+}
+ 
+
+
+
+ select {
+    width: 250px;
+    overflow: hidden;
+}
+
+ select {
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-select.gif) no-repeat #354880;
+    width: 270px;
+    position: relative;
+    left: 230px;
+    height: 48px;
+    font-size: 18px;
+    padding: 13px 20px 13px 12px;
+    color: #fff;
+    text-indent: 0.01px;
+    text-overflow: "";
+}
+
+ select::-ms-expand {
+    display: none;
+}

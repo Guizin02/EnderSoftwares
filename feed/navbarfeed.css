@@ -1,0 +1,95 @@
+
+/* ............................NAV START.................... */
+
+.logo img{
+    height: 50px;
+    width: 110px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: .7rem 0;
+	background: -webkit-linear-gradient(to right, #131e30, #b746fe,  #490275);
+	background: linear-gradient(to right, #131e30, #131e40, #23232e);
+    z-index: 10;
+    top: 0;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav span{
+    color: var(--color-primary);
+}
+nav {
+    color: var(--color-danger);
+}
+
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+   }
+   .search-bar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-right: 13vw;
+   }
+   .pesquisarnav {
+    width: 300px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .pesquisarnav::placeholder {
+    color: #490275;
+   }
+   
+   .pesquisarnav:focus, .pesquisarnav:hover {
+    outline: none;
+    border-color: #490275;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #27013e;
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+   .create{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 4vw;
+}
+
+
+@media (max-width: 1150px){
+    .search-bar{
+        display: none;
+    }
+}
+
+   
+
+
+/* ............................NAV END.................... */

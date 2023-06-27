@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+
+*{
+    font-family: 'Roboto', serif;
+
+}
+
+body{
+    background-color: #2a3444;
+}
+  
+:root{
+    --color-white:hsl(252, 30%, 100%);
+    --color-light:hsl(252, 30%, 95%);
+    --color-gry: rgb(160, 151, 190);
+    --color-primary:rgba(19, 30, 48, 1);
+    --color-success:hsl(120, 95%, 65%);
+    --color-danger:hsl(0, 95%, 65%);
+    --color-dark:hsl(252, 30%, 17%);
+    --color-black:hsl(252, 30%, 10%);
+
+
+    --btn-padding:.6rem 2rem;
+    --border-radius:0;
+    --card-border-radius:0;
+    --search-padding:.6rem 2rem;
+    --card-padding:1rem;
+
+    --stk-top-left:5.4rem;
+    --stk-top-right:-18rem;
+}
+
+
+ 
+/* ............CUSTOM STYLE........ */
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.icon1{
+    height: 1.4rem; 
+    width: 1.4rem;
+}
+
+.icon2{
+    height: 1.2rem; 
+    width: 1.2rem;
+}
+
+.btn{
+    padding: var(--btn-padding);    
+    display: inline-block;
+    font-weight: 500;
+    font-size: .9rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all .3s ease;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+.btn-primary{
+    background: var(--color-primary);
+    color: white;
+}
+.btn-danger{
+    background: var(--color-danger);
+    color: white;
+}
+
+.text-blod{
+    font-weight: bold;
+}
+.text-gry{
+    color: var(--color-gry);
+    margin: 0;
+}
+
+
+
+
+
+
+/* ............................START MAINE .................... */
+
+
+.main-right{
+    background-color: #2a3444;
+    width: 20vw;
+    position: fixed;
+    margin-top: 140px;
+    margin-right: 6vw;
+    right: 0;
+}
+
+.main-right .profile{
+    background: var(--color-white);
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.hendel a{ 
+    text-decoration: none;
+    color: black;
+}
+.hendel h1{
+    margin-bottom: .5rem;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 1rem;
+}
+.hendel a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.hendel p{ 
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    position: relative;
+    bottom: 7px;
+}
+
+.main-right p{
+    text-transform: lowercase;
+    font-size: .9rem;
+}
+.imgsPatrocinios{
+    width: 100%;
+    height: auto;
+}
+.imgsPatrocinios img{
+    width: 100%;
+}
+@media(max-width: 1150px) {
+    .main-right{
+        display: none;
+    }
+}

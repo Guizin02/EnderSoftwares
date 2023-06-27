@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto","Arial",sans-serif;
+}
+
+.colunadireita{
+    display: flex;
+    color: #fff;
+    background-color: #262e3d;
+    width: 20vw;
+    height: 100vh;
+    z-index: 0;
+    position: fixed;
+    right: 0;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#menucolunadireita{
+    display: flex;
+    margin-top: 120px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#menucolunadireita h1{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 5px;
+    width: auto;
+    text-align: center;
+}
+
+#menucolunadireita p{
+    font-size: 15px;
+    color: #fff;
+    margin: 0;
+    font-size: 25px;
+}
+
+#menucolunadireita .usuario{
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    text-align: center;
+}
+.content .propostasAceitas{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.blocoSolicitacao{
+    list-style: none;
+    color: #fff;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.blocoSolicitacao .dados-solicitacao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+}
+.blocoSolicitacao .info{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.buttons-action{
+    display: flex;
+    justify-content: center;
+    column-gap: 2vw;
+    margin: 5px;
+}
+.solicitacoes{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.list-users{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.list-users li{
+    background-color: white;
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+}
+.content{
+    width: 15vw;
+}
+.list-users li {
+    gap: 2vw;
+}
+
+.nameuser {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media only screen and (min-width: 1150px) {
+    .colunadireita{ display: inline !important; }
+    }
+    @media only screen and (max-width: 1150px) {
+    .colunadireita{ display: none !important; }
+    }

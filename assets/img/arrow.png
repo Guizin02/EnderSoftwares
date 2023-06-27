@@ -1,0 +1,76 @@
+htCheckedGradientDark>255, 171, 63</HighlightCheckedGradientDark>
+		<HighlightCheckedGradientLight>255, 207, 146</HighlightCheckedGradientLight>
+		<PressedButtonBorder>251, 140, 60</PressedButtonBorder>
+		<Highlight>180, 201, 233</Highlight>
+		<HighlightText>0, 0, 0</HighlightText>
+		<MenuShadowColor>90, 90, 90</MenuShadowColor>
+		<TOOLTIP>
+			<DRAW_SEPARATOR>FALSE</DRAW_SEPARATOR>
+			<ROUNDED_CORNERS>TRUE</ROUNDED_CORNERS>
+			<COLOR_FILL>255, 255, 255</COLOR_FILL>
+			<COLOR_FILLGRADIENT>201, 217, 239</COLOR_FILLGRADIENT>
+			<COLOR_TEXT>76, 76, 76</COLOR_TEXT>
+			<COLOR_BORDER>118, 118, 118</COLOR_BORDER>
+		</TOOLTIP>
+	</GLOBALS>
+	<MAINWND>
+		<CAPTION>
+			<FONT>
+				<WEIGHT>NORMAL</WEIGHT>
+				<QUALITY>CLEARTYPE</QUALITY>
+			</FONT>
+			<ActiveStart>228, 239, 253</ActiveStart>
+			<ActiveFinish>202, 222, 247</ActiveFinish>
+			<InactiveStart>227, 232, 239</InactiveStart>
+			<InactiveFinish>216, 225, 236</InactiveFinish>
+			<ActiveText>105, 112, 121</ActiveText>
+			<InactiveText>160, 160, 160</InactiveText>
+			<ActiveTitleText>62, 106, 170</ActiveTitleText>
+			<InactiveTitleText>160, 160, 160</InactiveTitleText>
+			<TextCenter>TRUE</TextCenter>
+			<BORDER>
+				<SIZE>35, 31</SIZE>
+				<CORNERS>5, 9, 5, 3</CORNERS>
+			</BORDER>
+			<BUTTONS>
+				<NORMAL>
+					<ConstSize>23, 23</ConstSize>
+					<IconSize>17, 16</IconSize>
+					<SIZE>17, 16</SIZE>
+					<CORNERS>2, 2, 2, 2</CORNERS>
+				</NORMAL>
+				<SMALL>
+					<ConstSize>16, 16</ConstSize>
+					<IconSize>13, 12</IconSize>
+					<SIZE>17, 16</SIZE>
+					<CORNERS>2, 2, 2, 2</CORNERS>
+				</SMALL>
+			</BUTTONS>
+		</CAPTION>
+		<ROUND_BORDER>9, 9</ROUND_BORDER>
+		<BORDER>
+			<SIZE>35, 23</SIZE>
+			<CORNERS>17, 0, 17, 22</CORNERS>
+			<SIDES>17, 0, 17, 17</SIDES>
+		</BORDER>
+		<BORDER_MDICHILD>
+			<SIZE>35, 23</SIZE>
+			<CORNERS>17, 0, 17, 22</CORNERS>
+			<SIDES>17, 0, 17, 17</SIDES>
+		</BORDER_MDICHILD>
+		<MainClientArea>164, 195, 235</MainClientArea>
+	</MAINWND>
+	<EDIT>
+		<BorderHighlighted>255, 189, 105</BorderHighlighted>
+	</EDIT>
+	<COMBO>
+		<BorderHighlighted>255, 189, 105</BorderHighlighted>
+		<BorderPressed>255, 189, 105</BorderPressed>
+		<BUTTON>
+			<GradientStartNormal>195, 221, 255</GradientStartNormal>
+			<GradientFinishNormal>227, 239, 255</GradientFinishNormal>
+			<GradientStartHighlighted>255, 220, 122</GradientStartHighlighted>
+			<GradientFinishHighlighted>255, 244, 199</GradientFinishHighlighted>
+			<BtnBorderHighlighted>255, 189, 105</BtnBorderHighlighted>
+			<GradientStartPressed>255, 183, 91</GradientStartPressed>
+			<Gradient

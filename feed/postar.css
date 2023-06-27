@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.textarea-publicar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 0.7vh;
+}
+.caption{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1vh 0;
+}
+.vagas strong{
+     font-size: 19px;
+}
+.vaga h2{
+   font-size: 25px;
+}
+.vaga p{
+    font-size: 18px;
+}
+.vagas p{
+    font-size: 17px;
+}
+#imgVaga{
+    display: flex;
+    gap: 10px;
+    width: 200px;
+}
+#imgPublicacao{
+    border: solid black 2px;
+    width: 100%;
+}
+#imgVaga{
+    display: flex;
+    justify-content: space-around;
+    margin: 2vh 0;
+    align-items: center;
+    width: 100%;
+}
+#imgPublicacao{
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background .2s;
+    width: 50%;
+    object-fit: cover;
+    height: 200px;
+}
+.escolhaImagens{
+    margin: 2vh 0;
+    text-align: center;
+    font-size: 16px;
+}
+.vaga-phots{
+    display: flex;
+    justify-content: space-around;
+    margin: 2vh 0;
+    align-items: center;
+}
+#imgPhotoVaga{
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background .2s;
+    width: 30%;
+    object-fit: cover;
+    height: 130px;
+}
+#imgPhotoVaga:hover{
+    background-color: #3c6dbd;
+}
+.inputImagem{
+    display: none;
+}
+.orcamento{
+    display: flex;
+    justify-content: end;
+    margin-top: 1vh;
+}
+.orcamento p{
+    font-size: 25px;
+}
+.creatPostText{
+    transition: .3s ease;
+}
+.creatPostText:focus, .creatPostText:hover {
+    outline: none;
+    border-color: #490275;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #27013e;
+}

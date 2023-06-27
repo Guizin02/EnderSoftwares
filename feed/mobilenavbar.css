@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobilenavbar{
+    display: flex;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(16, 23, 40);
+    height: 60px;
+    z-index: 10;
+    
+}
+.mobilenavbar svg{
+    background-color: transparent;
+}
+.mobilenavbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    height: 100%;
+}
+.mobilenavbar ul li{
+    display: flex;
+    align-items: center;
+
+}
+.mobilenavbar ul li a svg{
+    color: rgb(255, 255, 255);
+}
+
+.mobilenavbar ul li a svg:hover{
+    color: rgb(147, 64, 255);
+}
+@media only screen and (max-width: 529px) {
+    .mobilenavbar{ display: inline !important; }
+    }
+    @media only screen and (min-width: 530px) {
+    .mobilenavbar{ display: none !important; }
+    }

@@ -1,0 +1,33 @@
+tab_cliente:
+
+1-nome
+2-funcao
+3-bio
+4-desc
+5-aniver
+6-idade
+7-foto
+8-cidade
+9-estado
+10-rua
+11-caracteristica
+12-experiencia
+13-trabalhos
+14-objetivo
+15-habilidade
+16-curriculo
+17-portfolio
+18-port_capa
+19-email
+
+Juntar dados de 2 tabelas SQL
+
+https://kondado.com.br/blog/blog/2020/11/30/be-a-ba-do-sql-usando-join-para-combinar-tabelas/
+
+Janela Modular para o cadastro
+
+https://www.youtube.com/watch?v=pGJB5FgfdMI
+
+INNER JOIN com PHP
+
+https://www.youtube.com/watch?v=WK4B7RMQwSA

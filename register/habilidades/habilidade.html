@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../../assets/img/icon.png">
+
+    <title>Ender Softwares - Cadastro</title>
+</head>
+<body>
+    <div class="box">
+
+    <div class="logo">
+    <a href="../../index.php"> <img src="../../assets/img/logo.png" alt="Ender Softwares"> </a>
+    </div>
+
+    <h1>Insira até cinco habilidades</h1>
+    <div class="content">
+        <div class="content--add-item">
+            <select id="input-new-task" placeholder="Inserir habilidades">
+                <option value=" "></option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="Javascript">Javascript</option>
+        <option value="PHP">PHP</option>
+        <option value="SQL">SQL</option>
+        <option value="SCSS">SCSS</option>
+        <option value="Python">Python</option>
+        <option value="Ruby">Ruby</option>
+        <option value="C#">C#</option>
+        <option value="C++">C++</option>
+        <option value="Kotlin">Kotlin</option>
+        <option value="Java">Java</option>
+    </select>
+
+            <button onclick="newTask()" id="btn-new-task" title="Clique aqui para adicionar uma nova habilidade">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="content--body">
+            
+            <form action="teste.php" method="post" id="ferramentas">
+                <ol id="to-do-list"></ol>
+                <button type="submit" class="btn">Continuar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="script.js"></script>
+</html>

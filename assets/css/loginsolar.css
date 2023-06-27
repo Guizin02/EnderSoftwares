@@ -1,0 +1,668 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+	font-family: 'Roboto', serif;
+  text-decoration: none;
+}
+
+body {
+  background: #020410;
+  overflow-y: hidden;
+
+}
+
+
+.logo img {
+	height: 50px;
+  left: 60px;
+  top: 20px;
+  position: absolute;
+  z-index: 2;
+}
+
+#cadtext{
+  position: relative;
+  left: 60px;
+  margin-top: 15px;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 12.5%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  left: 20px;
+  top: 5px;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 16px;
+  color: #e4e4e4;
+  text-decoration: none;
+  font-weight: 500;
+
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #e4e4e4;
+  border-radius: 5px;
+  bottom: -6px;
+  transform: translateY(10px);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.navbar a:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.search-bar {
+  width: 250px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #e4e4e4;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #e4e4e4;
+  padding-left: 10px;
+}
+
+.search-bar input::placeholder {
+  color: #e4e4e4;
+}
+
+.search-bar button {
+  width: 40px;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-bar button i {
+  font-size: 22px;
+  color: #e4e4e4;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+}
+
+.container {
+  position: absolute;
+  width: 75%;
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.container .content {
+  width: 58%;
+  height: 100%;
+  background: transparent;
+  padding: 80px;
+  color: #e4e4e4;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container .logreg-box {
+  width: 42%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.content .logo {
+  font-size: 30px;
+}
+
+.text-sci h2 {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.text-sci h2 span {
+  font-size: 25px;
+}
+
+.text-sci p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.social-icons a i {
+  font-size: 22px;
+  color: #e4e4e4;
+  margin-right: 10px;
+  transition: 0.5s ease;
+}
+
+.social-icons a:hover i {
+  transform: scale(1.2);
+}
+
+.logreg-box .form-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #e4e4e4;
+}
+
+.logreg-box .form-box.register {
+  transform: translateX(600px);
+  transition: transform 0.6s ease;
+  transition-delay: 0s;
+}
+
+.logreg-box.active .form-box.register {
+  transform: translateX(0);
+  transition-delay: 0.7s;
+}
+
+.logreg-box .form-box.login {
+  transform: translateX(0);
+  transition: transform 0.6s ease;
+  transition-delay: 0.7s;
+}
+
+.logreg-box.active .form-box.login {
+  transform: translateX(400px);
+  transition-delay: 0s;
+}
+
+@media (min-width: 1080px) {
+  .logreg-box.active .form-box.login {
+    transform: translateX(800px);
+    transition-delay: 0s;
+  }
+}
+
+.form-box h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.form-box h5 {
+  font-size: 15px;
+  text-align: center;
+}
+
+.form-box .input-box {
+  position: relative;
+  width: 340px;
+  height: 50px;
+  border-bottom: 2px solid #e4e4e4;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #e4e4e4;
+  font-weight: 500;
+  padding-right: 28px;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 0;
+  top: 13px;
+  font-size: 19px;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.remember-forgot {
+  font-size: 14.5px;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input {
+  accent-color: #e4e4e4;
+  margin: 10px;
+}
+
+.remember-forgot a {
+  color: #e4e4e4;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+#cadtext {
+  margin: 5px;
+  color: #e4e4e4;
+  text-decoration: none;
+}
+
+#cadtext:hover{
+  text-decoration: underline;
+}
+
+
+.btn {
+  margin-top: 25px;
+  width: 100%;
+  height: 45px;
+  background-color: #081f2d; 
+  border: 2px solid #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #e4e4e4;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+  .btn:hover{ 
+  background-color: white; 
+  color: #081F2D; 
+  border-color: #081F2D; 
+  transition: 0.3s; 
+  }
+  
+  
+  
+
+.form-box .login-register {
+  font-size: 14.5px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.login-register p a {
+  color: #e4e4e4;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  bottom: 250px;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+}
+
+.login-register .login-link {
+  font-size: 14px;
+  font-weight: 350px;
+  position: relative;
+  margin-left: 60px;
+}
+
+.login-register .register-link {
+  font-size: 15px;
+  font-weight: 350px;
+  position: relative;
+  margin-left: 60px;
+}
+
+
+
+
+
+
+.sol{
+    height: 120px;
+    width: 120px;
+    background-image: url('../img/planets/sun.png');
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -4px 2px 56px #f9c05f;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.mercurio{
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/planets/mercurio.png');
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #f9c05f;
+    left: 43%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    animation:orbita2 2s linear infinite;
+}
+
+@keyframes orbita2{
+    from{transform:rotate(0deg)translateX(70px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(70px) rotate(-360deg);}
+}
+
+p{
+    color: white;
+    font-family: system-ui;
+    position: absolute;
+    left: -62px;
+    top: 11px;
+}
+
+.mercurio-outline,.venus-outline-1,.terra-outline-1,.marte-outline-1,.jupiter-outline-1,
+.saturno-outline-1,.urano-outline-1,.netuno-outline-1{
+    border-radius: 50%;
+    border: 1px dotted #ddd9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.mercurio-outline{
+    height: 140px;
+    width: 140px;
+}
+
+.venus{
+    height: 40px;
+    width: 40px;
+    background-image: url('../img/planets/venus.png');
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #c1aa81;
+    left: 40%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    animation:orbita3 10s linear infinite;
+}
+
+@keyframes orbita3{
+    from{transform:rotate(0deg)translateX(100px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(100px) rotate(-360deg);}
+}
+
+.venus-outline-1{
+    height: 200px;
+    width: 200px;
+}
+
+.terra{
+    height: 50px;
+    width: 50px;
+    background-image: url('../img/planets/terra.png');
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #2855d6;
+    left: 44%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    animation:orbita4 20s linear infinite;
+}
+
+@keyframes orbita4{
+    from{transform:rotate(0deg)translateX(150px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(150px) rotate(-360deg);}
+}
+
+.terra-outline-1{
+    height: 300px;
+    width: 300px;
+}
+.terra-circle{
+    height: 65px;
+    width: 65px;
+    border: 1px dotted #fff;
+    position: relative;
+    left: -8px;
+    top: -8px;
+    border-radius: 40px;
+}
+.terra-inner{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 45%;
+    top: 45%;
+    animation:orbita5 3s linear infinite;
+}
+
+@keyframes orbita5{
+    from{transform:rotate(0deg)translateX(33px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(33px) rotate(-360deg);}
+}
+
+.marte{
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/planets/marte.png');
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #fea535;
+    left: 46.5%;
+    top: 46.5%;
+    transform: translate(-50%,-50%);
+    animation:orbita6 30s linear infinite;
+}
+
+@keyframes orbita6{
+    from{transform:rotate(0deg)translateX(185px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(185px) rotate(-360deg);}
+}
+
+.marte-outline-1{
+    height: 370px;
+    width: 370px;
+}
+
+.jupiter{
+    height: 40px;
+    width: 40px;
+    background-image: url('../img/planets/jupiter.png');
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #cac2b9;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation:orbita7 60s linear infinite;
+}
+
+@keyframes orbita7{
+    from{transform:rotate(0deg)translateX(217px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(217px) rotate(-360deg);}
+}
+
+.jupiter-outline-1{
+    height: 430px;
+    width: 430px;
+}
+
+.saturno{
+    height: 50px;
+    width: 50px;
+    background-image: url('../img/planets/saturno.png');
+    background-size: 150%;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    animation:orbita8 90s linear infinite;
+}
+
+@keyframes orbita8{
+    from{transform:rotate(0deg)translateX(250px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(250px) rotate(-360deg);}
+}
+
+.saturno-outline-1{
+    height: 500px;
+    width: 500px;
+}
+
+.urano{
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/planets/urano.png');
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #cac2b9;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    animation:orbita9 200s linear infinite;
+}
+
+@keyframes orbita9{
+    from{transform:rotate(0deg)translateX(280px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(280px) rotate(-360deg);}
+}
+
+.urano-outline-1{
+    height: 560px;
+    width: 560px;
+}
+
+.netuno{
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/planets/netuno.png');
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 56px #cac2b9;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%,-50%);
+    animation:orbita11 400s linear infinite;
+}
+
+@keyframes orbita11{
+    from{transform:rotate(0deg)translateX(310px) rotate(0deg);}
+    to{transform:rotate(360deg)translateX(310px) rotate(-360deg);}
+}
+
+.netuno-outline-1{
+    height: 620px;
+    width: 620px;
+}
+
+/*# sourceMappingURL=cadprogram.css.map */
+@media(max-width: 1660px) {
+  .container .content {
+    display: none;
+  }
+  .form-box{
+    border: 2px solid rgba(255, 255, 255, 0.489);
+    border-radius: 10px;
+  }
+  .container .logreg-box{
+    position: absolute;
+    left: 20vw;
+  }
+}
+@media(max-width: 1280px) {
+  .container .logreg-box{
+    width: 400px;
+    left: 15vw;
+  }
+  
+}
+@media(max-width: 800px) {
+  .container .logreg-box{
+    left: 5vw;
+  }
+}
+@media(max-width: 600px) {
+  .container .logreg-box{
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 0vw;
+  }
+  .container {
+    position: absolute;
+    width: 100%;
+  }
+}
